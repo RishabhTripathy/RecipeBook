@@ -1,7 +1,16 @@
 {
   "expo": {
-    "name": "RecipeBook",
-    "slug": "RecipeBook",
+    "plugins": [
+      [
+        "expo-updates",
+        {
+          "username": "rish_you"
+        }
+      ]
+    ],
+    "name": "Recipe Book",
+    "slug": "recipe-book",
+    "description": "This is a recipe book app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +24,30 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rishyou.recipeBook"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rish_you.recipeBook"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a9813c38-ce3a-4ec4-a391-0fe02e15f8a8"
+      }
+    },
+    "owner": "rish_you",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a9813c38-ce3a-4ec4-a391-0fe02e15f8a8"
     }
   }
 }
